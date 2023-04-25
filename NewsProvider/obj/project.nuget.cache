@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OqMoKqGF30xB5hEpH8Q9aVeYhOcnkrQ4mDhf9ONywIzvusgtNf+YPHGU6wVoESuD0TFitOlrFxX5WhsFF28TGw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\geyne\\Documents\\Développement\\dev\\CS\\NewsProvider\\NewsProvider\\NewsProvider.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\geyne\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
