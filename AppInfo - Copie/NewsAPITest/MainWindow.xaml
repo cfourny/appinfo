@@ -1,0 +1,50 @@
+﻿<Window x:Class="NewsAPITest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewsAPITest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Fill="#1A73E8"></Rectangle>
+
+        <ComboBox Name="CountryFilter" Grid.Row="0" Width="100" Height="25" Margin="0,0,650,0">
+            <ComboBoxItem IsSelected="True">Tous les pays</ComboBoxItem>
+            <ComboBoxItem>us</ComboBoxItem>
+            <ComboBoxItem>gb</ComboBoxItem>
+            <ComboBoxItem>fr</ComboBoxItem>
+            <ComboBoxItem>be</ComboBoxItem>
+            <ComboBoxItem>ca</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Name="CategoryFilter"  Grid.Row="0" Width="100" Height="25" Margin="0,0,430,0">
+            <ComboBoxItem IsSelected="True">Toutes catégories</ComboBoxItem>
+            <ComboBoxItem>general</ComboBoxItem>
+            <ComboBoxItem>business</ComboBoxItem>
+            <ComboBoxItem>entertainment</ComboBoxItem>
+            <ComboBoxItem>health</ComboBoxItem>
+            <ComboBoxItem>science</ComboBoxItem>
+            <ComboBoxItem>sports</ComboBoxItem>
+            <ComboBoxItem>technology</ComboBoxItem>
+        </ComboBox>
+        <TextBox Grid.Row="0" Name="KeywordBox" Height="25" Width="100" Margin="0,0,220,0"></TextBox>
+        <Button Grid.Row="0" Name="getnewsbutton" Height="25" Width="100" Click="getnews">Recherche</Button>
+        <TextBlock Grid.Row="0" Margin="250,0,0,0" Name="Confirm" Height="25" Width="100">Aucune recherche</TextBlock>
+        <Rectangle Grid.Row="1"></Rectangle>
+        <TextBox Width="800" Background="#AAAAAA" TextAlignment="Center" Grid.Row="1">
+            Intitulé
+        </TextBox>
+        <ScrollViewer Grid.Row="2">
+            <Grid Name="GridNews">
+                <Grid.RowDefinitions>
+                </Grid.RowDefinitions>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+    
+</Window>
